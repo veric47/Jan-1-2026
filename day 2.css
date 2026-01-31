@@ -9,10 +9,18 @@ html {
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f6f8;
-    color: #333;
+  line-height: 1.6;
+  background-color: #f4f6f8;
+  color: #333;
+  font-family: "Bitcount Single", system-ui;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0;
 }
  
 header {
