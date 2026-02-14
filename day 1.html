@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="day 2.css">
-    <script src="day 3.js"></script>
     <title>My Professional Profile</title>
 </head>
-<div id="modal" class="modal">
-    <div class="modal-content">
-        <span id="close-modal">&times;</span>
-        <h2>Welcome!</h2>
-        <p>This is my interactive JavaScript modal.</p>
-    </div>
-</div>
 
 <body>
+
+    <!-- Modal MUST be inside body -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="close-modal">&times;</span>
+            <h2>Welcome!</h2>
+            <p>This is my interactive JavaScript modal.</p>
+        </div>
+    </div>
+
     <header>
         <nav>
             <div>Mahmoud Obadaki</div>
@@ -28,7 +30,8 @@
             </ul>
             <button id="menu-btn">Menu</button>
         </nav>
-        <section >
+
+        <section>
             <h1>Mahmoud Obadaki</h1>
             <p>Next Nigerian Game Designer</p>
         </section>
@@ -37,14 +40,13 @@
     <main>
         <section id="about">
             <h2>About Me</h2>
-            <p>Experienced developer passionate about creating responsive web applications. Based in Abuja, FCT, with expertise in modern web technologies.</p>
+            <p>Experienced developer passionate about creating responsive web applications.</p>
         </section>
 
         <section id="skills">
             <h2>Skills</h2>
             <ul>
-                <li> Unity 2D</li>
-                 <p>Unfortunately, I don't have a full with experience with Unity 2D yet.But i will in the future hopefully</p>
+                <li>Unity 2D</li>
             </ul>
         </section>
 
@@ -55,16 +57,19 @@
 
         <section id="projects">
             <h2>Projects</h2>
-             <p>in progress</p>
+            <p>In progress</p>
         </section>
     </main>
 
-<button id="alert-btn">Click Me</button>
+    <button id="alert-btn">Click Me</button>
 
     <footer id="contact">
         <h2>Contact</h2>
         <p>Email: mahmoud.s.obadaki@gmail.com</p>
-        <p>&copy; 2026 Your Name. All rights reserved.</p>
+        <p>&copy; 2026 Mahmoud Obadaki</p>
     </footer>
+ 
+    <script src="day 3.js"></script>
+
 </body>
 </html>
