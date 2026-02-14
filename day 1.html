@@ -4,19 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="day 2.css">
+    <script src="day 3.js"></script>
     <title>My Professional Profile</title>
 </head>
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span id="close-modal">&times;</span>
+        <h2>Welcome!</h2>
+        <p>This is my interactive JavaScript modal.</p>
+    </div>
+</div>
+
 <body>
     <header>
         <nav>
             <div>Mahmoud Obadaki</div>
-            <ul>
+            <ul id="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <button id="menu-btn">Menu</button>
         </nav>
         <section >
             <h1>Mahmoud Obadaki</h1>
@@ -48,6 +58,8 @@
              <p>in progress</p>
         </section>
     </main>
+
+<button id="alert-btn">Click Me</button>
 
     <footer id="contact">
         <h2>Contact</h2>

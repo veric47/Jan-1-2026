@@ -142,3 +142,56 @@ footer p {
         font-size: 2rem;
     }
 }
+#menu-btn {
+    display: none;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    #menu-btn {
+        display: block;
+    }
+
+    #nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    #nav-links.active {
+        display: flex;
+    }
+}
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 6px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+#close-modal {
+    cursor: pointer;
+    float: right;
+    font-size: 1.5rem;
+}
+
+.modal.show {
+    display: flex;
+}
