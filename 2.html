@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<body>
+    <form action="1.html" name="Forms" onsubmit="return(validate());">
+        <input name="email" placeholder="Email" type="text"><br>
+        <input name="password" placeholder="Password" type="password" minlength="6" maxlength="6"><br>
+        <button type="submit">Submit</button>
+    </form>
+    <script type="text/JavaScript">
+         function validate() 
+        {
+             if (document.forms["Forms"]["email"].value == "")
+             {
+                alert("Email must be filled out");
+                document.forms["Forms"]["email"].focus()
+             }
+             else if (document.forms["Forms"]["password"].value == "") 
+             {
+                alert("Password must be filled out");
+                document.forms["Forms"]["password"].focus()
+                return false;
+             }
+             else 
+             {
+
+             }
+        }
+    </script>
+</body>
+</html>
